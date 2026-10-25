@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ckto47864nwf"]
 
 [ext_resource type="PackedScene" uid="uid://b0ik7e6veito1" path="res://Scenes/themed_timer.tscn" id="1_uv8mt"]
-[ext_resource type="Texture2D" uid="uid://bk6rt0tlyktqf" path="res://Background.png" id="2_gfd58"]
+[ext_resource type="Texture2D" uid="uid://dxbwdpfughsap" path="res://Background.png" id="2_gfd58"]
 [ext_resource type="Script" uid="uid://q6go2h53v7e1" path="res://obstacle.gd" id="2_jia65"]
 [ext_resource type="Script" uid="uid://mbl5fwsimn7e" path="res://ninja_run.gd" id="2_lp71w"]
 [ext_resource type="Script" uid="uid://b7kvq71x6xa0n" path="res://Scenes/ninja_player.gd" id="3_ninja_player"]
@@ -23,20 +23,20 @@ size = Vector2(1150, 69)
 script = ExtResource("2_lp71w")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=582052597]
-position = Vector2(575, 322)
-scale = Vector2(1.0176367, 1.0256411)
+position = Vector2(576.5, 319)
+scale = Vector2(2.108257, 2.2695036)
 texture = ExtResource("2_gfd58")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1703517044]
 script = ExtResource("3_ninja_player")
 
 [node name="Mario" type="Sprite2D" parent="CharacterBody2D" unique_id=1276336533]
-position = Vector2(59, 518)
-scale = Vector2(0.5285714, 0.50285715)
+position = Vector2(59, 536)
+scale = Vector2(0.78378373, 0.7364863)
 texture = ExtResource("5_lp71w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=112088601]
-position = Vector2(60, 513)
+position = Vector2(57, 524)
 shape = SubResource("CapsuleShape2D_xrivr")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=368750282]

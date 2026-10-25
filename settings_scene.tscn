@@ -9,7 +9,7 @@ script = ExtResource("1_n6qfs")
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2127052544]
 offset_right = 574.5
 offset_bottom = 324.0
-color = Color(0.4862745, 0.6313726, 1, 1)
+color = Color(1, 0.46216595, 0.3229906, 1)
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="ColorRect" unique_id=347815973]
 layout_mode = 0

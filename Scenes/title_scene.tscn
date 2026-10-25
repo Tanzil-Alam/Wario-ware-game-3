@@ -27,7 +27,7 @@ offset_right = 1247.0
 offset_bottom = 436.0
 theme_override_constants/outline_size = 40
 theme_override_font_sizes/normal_font_size = 108
-text = "Ninja Ware"
+text = "Duck Ware"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=69580935]
 offset_left = 426.0
@@ -38,19 +38,19 @@ offset_bottom = 367.0
 [node name="Start" type="Button" parent="VBoxContainer" unique_id=835734566]
 layout_mode = 2
 theme_override_constants/outline_size = 14
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 50
 text = "Start Game"
 
 [node name="Settings" type="Button" parent="VBoxContainer" unique_id=1466919267]
 layout_mode = 2
 theme_override_constants/outline_size = 14
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 50
 text = "Settings"
 
 [node name="Quit" type="Button" parent="VBoxContainer" unique_id=1179037145]
 layout_mode = 2
 theme_override_constants/outline_size = 14
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 50
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]

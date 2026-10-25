@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dhku8jr47ixab"]
 
-[ext_resource type="Texture2D" uid="uid://bk6rt0tlyktqf" path="res://Background.png" id="1_background"]
+[ext_resource type="Texture2D" path="res://Background.png" id="1_background"]
 [ext_resource type="Texture2D" uid="uid://bw8c8q63pxs2x" path="res://Mario.png" id="2_player"]
 [ext_resource type="Script" uid="uid://dh54dq8hxawdu" path="res://Scenes/minigame_4.gd" id="3_game"]
 [ext_resource type="Script" uid="uid://t7kpioh43v2t" path="res://Scenes/minigame_4_player.gd" id="4_player"]
@@ -10,8 +10,8 @@
 size = Vector2(1156, 90)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_player"]
-radius = 27.0
-height = 72.0
+radius = 43.0
+height = 86.0
 
 [node name="Minigame4" type="Node2D" unique_id=1572373323]
 script = ExtResource("3_game")
@@ -28,9 +28,10 @@ offset_left = 2.0
 offset_top = 550.0
 offset_right = 1151.0
 offset_bottom = 640.0
+color = Color(0, 1, 1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=754216549]
-position = Vector2(580, 601)
+position = Vector2(571, 598)
 shape = SubResource("RectangleShape2D_floor")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1935036214]
@@ -38,10 +39,12 @@ position = Vector2(576, 517)
 script = ExtResource("4_player")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1358059944]
+position = Vector2(-3, -6)
 shape = SubResource("CapsuleShape2D_player")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1531926480]
-scale = Vector2(0.5, 0.5)
+position = Vector2(-5, -9)
+scale = Vector2(0.7837838, 0.6621622)
 texture = ExtResource("2_player")
 
 [node name="TimerScene" parent="." unique_id=1697603393 instance=ExtResource("5_wae4i")]
