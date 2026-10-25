@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://ckto47864nwf"]
+
+[ext_resource type="PackedScene" uid="uid://b0ik7e6veito1" path="res://Scenes/themed_timer.tscn" id="1_uv8mt"]
+[ext_resource type="Texture2D" uid="uid://bk6rt0tlyktqf" path="res://Background.png" id="2_gfd58"]
+[ext_resource type="Script" uid="uid://q6go2h53v7e1" path="res://obstacle.gd" id="2_jia65"]
+[ext_resource type="Script" uid="uid://mbl5fwsimn7e" path="res://ninja_run.gd" id="2_lp71w"]
+[ext_resource type="Script" uid="uid://b7kvq71x6xa0n" path="res://Scenes/ninja_player.gd" id="3_ninja_player"]
+[ext_resource type="Texture2D" uid="uid://djnax7462fnfd" path="res://shuriken.png" id="5_7dlwk"]
+[ext_resource type="Texture2D" uid="uid://bw8c8q63pxs2x" path="res://Mario.png" id="5_lp71w"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xrivr"]
+radius = 43.0
+height = 114.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gfd58"]
+radius = 23.0
+height = 110.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njqwk"]
+size = Vector2(1150, 69)
+
+[node name="ninja_run" type="Node2D" unique_id=1230817370]
+script = ExtResource("2_lp71w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=582052597]
+position = Vector2(575, 322)
+scale = Vector2(1.0176367, 1.0256411)
+texture = ExtResource("2_gfd58")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1703517044]
+script = ExtResource("3_ninja_player")
+
+[node name="Mario" type="Sprite2D" parent="CharacterBody2D" unique_id=1276336533]
+position = Vector2(59, 518)
+scale = Vector2(0.5285714, 0.50285715)
+texture = ExtResource("5_lp71w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=112088601]
+position = Vector2(60, 513)
+shape = SubResource("CapsuleShape2D_xrivr")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=368750282]
+script = ExtResource("2_jia65")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=2123349782]
+position = Vector2(271, 526)
+scale = Vector2(0.16733068, 0.17704917)
+texture = ExtResource("5_7dlwk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1004932810]
+position = Vector2(270, 522)
+shape = SubResource("CapsuleShape2D_gfd58")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=866908970]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=237793909]
+position = Vector2(572, 609.5)
+shape = SubResource("RectangleShape2D_njqwk")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=1751603300]
+offset_left = -1.0
+offset_top = 573.0
+offset_right = 1150.0
+offset_bottom = 642.0
+
+[node name="ThemedTimer" parent="." unique_id=1697603393 instance=ExtResource("1_uv8mt")]
+position = Vector2(481, -276)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="player_hit" from="Area2D" to="." method="_on_game_over"]

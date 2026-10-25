@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://c5m103cffgewc"]
+
+[ext_resource type="Script" uid="uid://24m864dnndp0" path="res://Scenes/done_screen.gd" id="1_en6tx"]
+[ext_resource type="Texture2D" uid="uid://b32hqh1pygnux" path="res://Done.png" id="2_3rr80"]
+
+[node name="done_screen" type="Node2D" unique_id=996101085]
+script = ExtResource("1_en6tx")
+
+[node name="ColorRect" type="TextureRect" parent="." unique_id=1150681135]
+offset_left = -41.0
+offset_top = -24.0
+offset_right = 1150.0
+offset_bottom = 661.0
+texture = ExtResource("2_3rr80")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=106583404]
+layout_mode = 0
+offset_left = 457.0
+offset_top = 28.0
+offset_right = 761.0
+offset_bottom = 127.0
+theme_override_colors/default_color = Color(0.9560314, 0.0001205194, 0.77074724, 1)
+theme_override_font_sizes/normal_font_size = 60
+text = "YOU WIN!"
+
+[node name="Button" type="Button" parent="." unique_id=1093046783]
+offset_left = 423.0
+offset_top = 271.0
+offset_right = 748.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0.8619968, 0.9319736, 1.540184e-06, 1)
+theme_override_font_sizes/font_size = 40
+text = "Play Again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
