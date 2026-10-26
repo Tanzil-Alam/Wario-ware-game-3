@@ -8,8 +8,8 @@ script = ExtResource("1_moll0")
 [node name="timer" type="RichTextLabel" parent="." unique_id=1157663235]
 offset_left = 522.0
 offset_top = 281.0
-offset_right = 648.0
-offset_bottom = 384.0
+offset_right = 644.0
+offset_bottom = 383.0
 theme_override_colors/default_color = Color(18.469584, 0, 0, 0.85490197)
 theme_override_font_sizes/normal_font_size = 80
 text = "0.0"
