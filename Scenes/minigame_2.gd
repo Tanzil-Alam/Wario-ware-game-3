@@ -20,5 +20,4 @@ func _process(delta: float) -> void:
 		get_tree().change_scene_to_file("res://Scenes/level_scene.tscn")
 	elif timer_end:
 		scene_transition_started = true
-		Global.lives -= 1
-		get_tree().change_scene_to_file("res://Scenes/level_scene.tscn")
+		Global.lose_life()

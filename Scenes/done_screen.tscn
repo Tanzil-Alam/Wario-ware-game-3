@@ -19,19 +19,19 @@ offset_bottom = 661.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=106583404]
 layout_mode = 0
-offset_left = 457.0
-offset_top = 28.0
-offset_right = 761.0
-offset_bottom = 127.0
-theme_override_colors/default_color = Color(18.173782, 5.58784, 5.797603, 1)
+offset_left = 486.0
+offset_top = 65.0
+offset_right = 790.0
+offset_bottom = 164.0
+theme_override_colors/default_color = Color(0, 2.0292966, 3.3568656, 1)
 theme_override_font_sizes/normal_font_size = 60
 text = "YOU WIN!"
 
 [node name="Button" type="Button" parent="." unique_id=1093046783]
-offset_left = 423.0
-offset_top = 271.0
-offset_right = 748.0
-offset_bottom = 359.0
+offset_left = 408.0
+offset_top = 277.0
+offset_right = 733.0
+offset_bottom = 365.0
 theme_override_colors/font_color = Color(0.8619968, 0.9319736, 1.540184e-06, 1)
 theme_override_font_sizes/font_size = 40
 text = "Play Again"

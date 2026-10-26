@@ -1,37 +1,37 @@
 [gd_scene format=3 uid="uid://dhku8jr47ixab"]
 
-[ext_resource type="Texture2D" path="res://Background.png" id="1_background"]
 [ext_resource type="Texture2D" uid="uid://bw8c8q63pxs2x" path="res://Mario.png" id="2_player"]
+[ext_resource type="Texture2D" uid="uid://27swugf5nijy" path="res://Screenshot (955).png" id="2_wae4i"]
 [ext_resource type="Script" uid="uid://dh54dq8hxawdu" path="res://Scenes/minigame_4.gd" id="3_game"]
 [ext_resource type="Script" uid="uid://t7kpioh43v2t" path="res://Scenes/minigame_4_player.gd" id="4_player"]
 [ext_resource type="PackedScene" uid="uid://b0ik7e6veito1" path="res://Scenes/themed_timer.tscn" id="5_wae4i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
-size = Vector2(1156, 90)
+size = Vector2(1157, 95)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_player"]
-radius = 43.0
+radius = 39.0
 height = 86.0
 
 [node name="Minigame4" type="Node2D" unique_id=1572373323]
 script = ExtResource("3_game")
 
 [node name="Background" type="TextureRect" parent="." unique_id=751510266]
-offset_right = 1152.0
-offset_bottom = 638.0
-texture = ExtResource("1_background")
+offset_right = 1151.0
+offset_bottom = 643.0
+texture = ExtResource("2_wae4i")
 
 [node name="Floor" type="StaticBody2D" parent="." unique_id=265313333]
 
 [node name="Visual" type="ColorRect" parent="Floor" unique_id=607150437]
 offset_left = 2.0
-offset_top = 550.0
-offset_right = 1151.0
+offset_top = 552.0
+offset_right = 1147.0
 offset_bottom = 640.0
-color = Color(0, 1, 1, 1)
+color = Color(0.283509, 0.9952894, 0.9498624, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=754216549]
-position = Vector2(571, 598)
+position = Vector2(571.5, 595.5)
 shape = SubResource("RectangleShape2D_floor")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1935036214]
@@ -43,8 +43,8 @@ position = Vector2(-3, -6)
 shape = SubResource("CapsuleShape2D_player")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1531926480]
-position = Vector2(-5, -9)
-scale = Vector2(0.7837838, 0.6621622)
+position = Vector2(-2.000008, -4.499993)
+scale = Vector2(0.8243242, 0.7229731)
 texture = ExtResource("2_player")
 
 [node name="TimerScene" parent="." unique_id=1697603393 instance=ExtResource("5_wae4i")]

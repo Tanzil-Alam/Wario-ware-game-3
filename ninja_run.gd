@@ -28,5 +28,4 @@ func _on_game_over() -> void:
 		return
 
 	scene_transition_started = true
-	Global.lives = maxi(Global.lives - 1, 0)
-	get_tree().change_scene_to_file("res://Scenes/death_screen.tscn")
+	Global.lose_life()

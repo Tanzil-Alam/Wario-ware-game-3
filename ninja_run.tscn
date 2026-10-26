@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ckto47864nwf"]
 
 [ext_resource type="PackedScene" uid="uid://b0ik7e6veito1" path="res://Scenes/themed_timer.tscn" id="1_uv8mt"]
-[ext_resource type="Texture2D" uid="uid://dxbwdpfughsap" path="res://Background.png" id="2_gfd58"]
+[ext_resource type="Texture2D" uid="uid://27swugf5nijy" path="res://Screenshot (955).png" id="2_7dlwk"]
 [ext_resource type="Script" uid="uid://q6go2h53v7e1" path="res://obstacle.gd" id="2_jia65"]
 [ext_resource type="Script" uid="uid://mbl5fwsimn7e" path="res://ninja_run.gd" id="2_lp71w"]
 [ext_resource type="Script" uid="uid://b7kvq71x6xa0n" path="res://Scenes/ninja_player.gd" id="3_ninja_player"]
@@ -22,10 +22,14 @@ size = Vector2(1150, 69)
 [node name="ninja_run" type="Node2D" unique_id=1230817370]
 script = ExtResource("2_lp71w")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=950054656]
+offset_right = 1149.0
+offset_bottom = 643.0
+texture = ExtResource("2_7dlwk")
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=582052597]
 position = Vector2(576.5, 319)
 scale = Vector2(2.108257, 2.2695036)
-texture = ExtResource("2_gfd58")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1703517044]
 script = ExtResource("3_ninja_player")

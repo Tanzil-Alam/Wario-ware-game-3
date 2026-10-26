@@ -35,3 +35,10 @@ func load_next_minigame():
 		get_tree().change_scene_to_file(next_scene)
 	else:
 		get_tree().change_scene_to_file("res://Scenes/done_screen.tscn")
+
+func lose_life():
+	lives = maxi(lives - 1, 0)
+	if lives == 0:
+		get_tree().change_scene_to_file("res://Scenes/death_screen.tscn")
+	else:
+		get_tree().change_scene_to_file("res://Scenes/level_scene.tscn")

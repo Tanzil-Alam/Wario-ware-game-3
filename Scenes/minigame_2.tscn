@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://drjnwodke0q5r"]
 
-[ext_resource type="Texture2D" uid="uid://bupi1nymhaq0w" path="res://Background.png" id="1_dfb65"]
 [ext_resource type="Script" uid="uid://hr5tc875f36u" path="res://Scenes/minigame_2.gd" id="1_rfxq2"]
+[ext_resource type="Texture2D" uid="uid://27swugf5nijy" path="res://Screenshot (955).png" id="2_mmgun"]
 [ext_resource type="Texture2D" uid="uid://bslbfb1cixeup" path="res://images-Photoroom.png" id="2_rfxq2"]
 [ext_resource type="Script" uid="uid://cmertw1202jfg" path="res://button_1.gd" id="3_mmgun"]
 [ext_resource type="PackedScene" uid="uid://b0ik7e6veito1" path="res://Scenes/themed_timer.tscn" id="4_h684j"]
@@ -14,7 +14,7 @@ offset_left = -4.0
 offset_top = -2.0
 offset_right = 1154.0
 offset_bottom = 647.0
-texture = ExtResource("1_dfb65")
+texture = ExtResource("2_mmgun")
 
 [node name="Button_1" type="TextureButton" parent="." unique_id=1460283223]
 offset_left = -4.0
@@ -27,10 +27,10 @@ stretch_mode = 5
 script = ExtResource("3_mmgun")
 
 [node name="Button_2" type="TextureButton" parent="." unique_id=1044879220]
-offset_left = 819.0
-offset_top = 28.000008
-offset_right = 1564.0002
-offset_bottom = 728.0
+offset_left = 398.00003
+offset_top = 123.99999
+offset_right = 1143.0002
+offset_bottom = 824.0
 scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("2_rfxq2")
 stretch_mode = 5

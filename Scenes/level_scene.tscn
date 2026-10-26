@@ -17,10 +17,10 @@ scale = Vector2(2.1137614, 2.2517729)
 texture = ExtResource("1_cn3xy")
 
 [node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=432057585]
-offset_left = 57.0
-offset_top = 75.0
-offset_right = 1225.0
-offset_bottom = 255.0
+offset_left = 159.0
+offset_top = 27.0
+offset_right = 1048.0
+offset_bottom = 188.0
 
 [node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=1059696573]
 custom_minimum_size = Vector2(50, 50)
